@@ -31,12 +31,12 @@ jobs:
 
       - name: Find files in directory
         run:
-          ls
+          ls build
 
       # Runs a set of commands using the runners shell
       - name: Permiss
         run:
-          sh chmod +x ./build/KlaudWeb
+          sh chmod +x build/KlaudWeb
       - name: Run
         run:
           sh ./run.sh 
