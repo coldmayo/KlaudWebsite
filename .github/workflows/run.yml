@@ -30,8 +30,7 @@ jobs:
         run: echo Hello, world!
 
       - name: Find files in directory
-        run: 
-          cd build
+        run:
           ls
 
       # Runs a set of commands using the runners shell
