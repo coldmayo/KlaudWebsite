@@ -34,9 +34,9 @@ jobs:
           ls
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Permiss
         run:
           sh chmod +x ./build/KlaudWeb
-          sh ./run.sh
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: Run
+        run:
+          sh ./run.sh 
