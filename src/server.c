@@ -61,9 +61,9 @@ struct Route * search(struct Route * root, char* key) {
 
 	if (strcmp(key, root->key) == 0){
 		return root;
-	} else if (strcmp(key, root->key) > 0) {
+	}else if (strcmp(key, root->key) > 0) {
 		return search(root->right, key);
-	} else if (strcmp(key, root->key) < 0) {
+	}else if (strcmp(key, root->key) < 0) {
 		return search(root->left, key);
 	}  
 
@@ -77,10 +77,8 @@ void init_server(HTTP_Server * http_server, int port) {
 
 	struct sockaddr_in server_address;
 	server_address.sin_family = AF_INET;
-	server_address.sin_addr.s_addr = inet_addr("127.0.0.1");
-	//server_address.sin_port = 0;
 	server_address.sin_port = htons(port);
-	//server_address.sin_addr.s_addr = INADDR_ANY;
+	server_address.sin_addr.s_addr = INADDR_ANY;
 
 	bind(server_socket, (struct sockaddr *) &server_address, sizeof(server_address));
 

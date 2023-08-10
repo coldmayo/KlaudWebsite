@@ -6,9 +6,7 @@
 	</head>
 	<body>
 		<div class="titleCard">
-			<div class="h1">
-				Installation Page
-			</div><br/>
+			<h1>Installation Page</h1>>
 			<img src="https://i.imgur.com/1vOEujx.png">
 			<p>The first Klaud based Operating System</p>
 			<br/>
@@ -20,14 +18,19 @@
 		</div>
 		<div class="contents">
 			<h2>Installation</h2>
+			Before you do anything, make sure you have the below installed:<br/>
+			make<br>
+			gcc<br>
+			nasm<br>
+			qemu-system-x86<br>
 			<h3>Download From Release</h3>
 			Download disk image and sh file from release on github<br/>
-			Run run.sh file<br/>
+			run: ./run.sh in the terminal<br/>
 			<h3>Download From Source</h3>
-			Clone repo<br/>
-			Run command: make toolchain<br/>
-			Run command: make<br/>
-			Run: run.sh<br/>
+			Clone repo: git clone https://github.com/coldmayo/KlaudOS<br/>
+			Get into folder: cd KlaudOS<br/>
+			Conjure disk image: make<br/>
+			Run Operating System in QEMU: ./run.sh<br/>
 		</div>
 	</body>
 </html>
