@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>KlaudOS</title>
 		<link rel="stylesheet" href="../style/index.css" />
+		<title>KlaudOS</title>
 	</head>
 	<body>
 		<div class="titleCard">
-			<h1>Installation Page</h1>>
+			<h1>Installation Page</h1>
 			<img src="https://i.imgur.com/1vOEujx.png">
 			<p>The first Klaud based Operating System</p>
 			<br/>
@@ -24,13 +24,21 @@
 			nasm<br>
 			qemu-system-x86<br>
 			<h3>Download From Release</h3>
-			Download disk image and sh file from release on github<br/>
-			run: ./run.sh in the terminal<br/>
-			<h3>Download From Source</h3>
-			Clone repo: git clone https://github.com/coldmayo/KlaudOS<br/>
-			Get into folder: cd KlaudOS<br/>
-			Conjure disk image: make<br/>
-			Run Operating System in QEMU: ./run.sh<br/>
+			Download disk image and sh file from <a href="https://github.com/coldmayo/KlaudOS" target="_blank">release</a><br/><br/>
+			Make executables:<br/>
+			<code>chmod +x run.sh</code><br/><br/>
+			Run Operating System in QEMU:<br/> 
+			<code>./run.sh</code><br/>
+			<h3>Download From Source (Linux)</h3>
+			Clone <a href="https://github.com/coldmayo/KlaudOS" target="_blank">repository</a><br/><br/>
+			cd into folder<br/><br/>
+			Make executables:<br/>
+			<code>chmod +x make.sh</code><br/>
+			<code>chmod +x run.sh</code><br/><br/>
+			Conjure disk image:<br/>
+			<code>./make.sh</code><br/><br/>
+			Run Operating System in QEMU:<br/> 
+			<code>./run.sh</code><br/>
 		</div>
 	</body>
 </html>

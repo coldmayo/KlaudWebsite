@@ -9,6 +9,10 @@ $ git clone https://github.com/coldmayo/KlaudWebsite
 # Go into the repository
 $ cd KlaudWebsite
 
+# Make executables
+$ chmod +x make.sh
+$ chmod +x run.sh
+
 # Conjure website
 $ ./make.sh
 

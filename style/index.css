@@ -1,4 +1,7 @@
-body {width: 100%; height: 100%}
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	width: 100%; height: 100%
+}
 
 .h1 {
 	text-align: center;
@@ -74,4 +77,11 @@ a:link {
   
 a:visited {
     color: blue;
+}
+
+code {
+	background-color: #eee;
+	border-radius: 3px;
+	font-family: 'Courier New', Courier, monospace;
+	padding: 0 3px;
 }
